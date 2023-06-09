@@ -19,9 +19,6 @@ CREATE TABLE MsStaff (
 		CONSTRAINT validateStaffSalary CHECK (StaffSalary >3500000 AND StaffSalary <20000000)
 )
 
-INSERT INTO MsStaff VALUES
-('JCN-S3120','Elbert Winata','Female','elbert@ok.com','2003-10-10','098709870987','Pakualam Street','5000000')
-
 CREATE TABLE MsMemory (
 	MemoryID VARCHAR(9) PRIMARY KEY CHECK (MemoryID LIKE 'JCN-M[3-7][1-2][0-9][0-9]'),
 	MemoryName VARCHAR(200) not null,
